@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0e6fa461-325c-43be-a542-20385d168e9b" name="AddCarToFleed" linkedPackageId="828fedf3-5b53-40e2-9c8a-9cf6d8c2ffb5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="438134b3-d88c-4b3c-8943-2681dbc93c62" name="CarAdministrator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d30590a2-40a7-4e81-a111-282b91a87b69" />
+        <targetEnds>
+          <association Id="b0596eba-f13f-4826-b4cf-53c6c92b7652" isDerived="false" sourceEndRoleName="CarAdministrator" targetEndRoleName="defineCar" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7b58fe91-118a-4dc1-b29a-9fef55d646f5" LastKnownName="defineCar" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e40c2533-386e-456e-89e4-a6c8ab269659" name="CarAdministrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6962974d-fb72-4bd8-89fc-c8b5d4848113" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd2bd2c1-2973-4f62-ace4-87aa2a54a6c2" name="defineCar" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="31d68f18-36d7-4a36-8e25-ed6b7262c794" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="90c4a458-bdb3-4368-a56a-2ea9bd76736a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7b58fe91-118a-4dc1-b29a-9fef55d646f5" name="defineCar" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="975f8b98-9492-4d1a-a6ad-9c7246aa279b" />
+        <subjects>
+          <subsystemMoniker Id="40069fbe-a057-4b95-bb66-9a5eee58fc44" LastKnownName="AddCarToFleed" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="40069fbe-a057-4b95-bb66-9a5eee58fc44" name="AddCarToFleed" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="75a226f7-f38d-42aa-abf9-ceb1321083cb" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="828fedf3-5b53-40e2-9c8a-9cf6d8c2ffb5" name="CarControlUI">
+    <elementDefinition Id="624699a2-ecf8-4866-8201-7ea51fb33ad6" />
+    <profileInstances>
+      <packageHasProfileInstances Id="dc5a2838-ad78-4c3a-83cf-8c62661c0f48">
+        <profileInstance Id="999ea81e-b2b7-4e6c-9871-218d307e2b39" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c48ceb2c-c968-4738-a9da-3489b198c151">
+        <profileInstance Id="a82772a3-2953-4713-b05e-8faf392b8275" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

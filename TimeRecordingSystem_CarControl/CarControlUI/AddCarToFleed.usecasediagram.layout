@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AddCarToFleed">
+  <useCaseModelRootMoniker Id="0e6fa461-325c-43be-a542-20385d168e9b" />
+  <nestedChildShapes>
+    <actorShape Id="ec7cd3c0-3beb-492d-a1c9-40e3256e4cd6" absoluteBounds="1.375, 1.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="438134b3-d88c-4b3c-8943-2681dbc93c62" LastKnownName="CarAdministrator" />
+      <relativeChildShapes />
+    </actorShape>
+    <SubsystemShape Id="08141ce9-dcd7-4edc-ba1c-05871db75209" absoluteBounds="3.125, 1.125, 3, 2.875" customColor="White">
+      <subsystemMoniker Id="40069fbe-a057-4b95-bb66-9a5eee58fc44" LastKnownName="AddCarToFleed" />
+      <nestedChildShapes>
+        <useCaseShape Id="041cb0e0-01f6-4296-a97e-b4e5acccaf3e" absoluteBounds="4.125, 2, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="7b58fe91-118a-4dc1-b29a-9fef55d646f5" LastKnownName="defineCar" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <useCaseAssociationConnector edgePoints="[(1.875 : 1.90625); (4.13992874992733 : 2.18936609374092)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="b0596eba-f13f-4826-b4cf-53c6c92b7652" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="ec7cd3c0-3beb-492d-a1c9-40e3256e4cd6" />
+        <useCaseShapeMoniker Id="041cb0e0-01f6-4296-a97e-b4e5acccaf3e" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>
